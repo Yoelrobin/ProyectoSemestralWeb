@@ -96,15 +96,21 @@
 
 .navbar-dark a:hover {
   color: rgb(0, 128, 96);
-} 
+}
 
-div.vertical-line{ margin: 0; width: 1px;  background-color: rgb(255, 255, 255);  height: 50%;  float: right; }
+div.vertical-line {
+  margin: 0;
+  width: 1px;
+  background-color: rgb(255, 255, 255);
+  height: 50%;
+  float: right;
+}
 
 .carousel-inner img {
   width: 100%;
   max-height: 550px;
 }
 
-.carousel-inner{
-height: 600px;
+.carousel-inner {
+  height: 600px;
 }
