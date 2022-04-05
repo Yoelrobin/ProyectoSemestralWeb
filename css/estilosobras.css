@@ -88,3 +88,11 @@
     margin-bottom:0;
   }
   
+  .carousel-inner img {
+    width: 100%;
+    max-height: 500px;
+}
+
+.carousel-inner{
+ height: 500px;
+}

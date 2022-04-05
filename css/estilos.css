@@ -98,5 +98,5 @@
   color: rgb(0, 128, 96);
 } 
 
-div.vertical-line{ width: 1px;  background-color: rgb(255, 255, 255);  height: 100%;  float: left; }
+div.vertical-line{ margin: 0; width: 1px;  background-color: rgb(255, 255, 255);  height: 50%;  float: right; }
 
