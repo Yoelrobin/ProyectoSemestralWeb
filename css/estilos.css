@@ -114,3 +114,12 @@ div.vertical-line {
 .carousel-inner {
   height: 600px;
 }
+
+body {
+  background-color: #ffffff;
+  background-image: url("../img/Fondo2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
