@@ -106,28 +106,28 @@ div.vertical-line {
   float: right;
 }
 
-.carousel-inner img {
-  width: 100%;
-  max-height: 700px;
-}
-
-.carousel-inner {
-  height: 700px;
-}
-
 body {
-  overflow-x:hidden
-  }
+  overflow-x: hidden
+}
 
-  .carousel-caption h5{
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 5cm;
-    margin: 0 auto;
-  }
+.carousel-caption h5 {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 5cm;
+  margin: 0 auto;
+}
 
-  .carousel-caption p{
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 10cm;
-    margin: 0 auto;
-  }
+.carousel-caption p {
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 10cm;
+  margin: 0 auto;
+}
 
+.carousel-inner img {
+  max-height: 500px;
+  max-width: 800px;
+}
+
+.carousel-inner{
+  max-height: 500px;
+  max-width: 800px;
+}
