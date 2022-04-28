@@ -16,6 +16,7 @@
   <br><br><br><br><br><br><br>
 
   <!--Inicio Sesion(Formulario)-->
+
   <section class="container col-md-8">
     <div class="row">
       <div class="container col-sm-6 col-md-3">
@@ -25,20 +26,19 @@
         <form>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="letra">Email </label>
-            <input type="email" class="form-control" id="cadena" onkeyup="vNombre()" aria-describedby="emailHelp">
+            <input type="email" class="form-control" id="cadena" onkeyup="vNombre()" aria-describedby="emailHelp" required>
             <div id="emailHelp" class="form-text"></div>
             <p id="mensaje"></p>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="letra">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input type="password" class="form-control" id="exampleInputPassword1" required>
           </div>
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="letra" for="exampleCheck1">Recuerdame</label>
           </div>
-          <a href="../Home.html" class="btn btn-primary btn-lg" tabindex="-1" role="button"
-            aria-disabled="true">Entrar</a>
+          <button type="submit" class="btn btn-outline-dark">Enviar</button>
           <br><br>
           <div class="container col 4 text-center olv">
             <a href="...">¿Olvido su contraseña?</a>

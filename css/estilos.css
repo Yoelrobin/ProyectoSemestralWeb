@@ -131,3 +131,16 @@ body {
   max-height: 600px;
   max-width: 1500px;
 }
+
+/*
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:invalid:required {
+  background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(255, 0, 0, 0.5));
+}
+
+input:valid {
+  border: 2px solid black;
+}
