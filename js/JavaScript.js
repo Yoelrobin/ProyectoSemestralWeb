@@ -5,7 +5,6 @@ function vNombre() {
     if (cantidad >= 1 && cantidad <= 3) {
         document.getElementById('mensaje').innerHTML = 'Pocos Caracteres'
         document.getElementById('mensaje').style.color = 'red'
-        document.getElementById('enviar').disabled = true;
     }
     if (cantidad >= 3 && cantidad <= 16) {
         document.getElementById('mensaje').innerHTML = 'Correcto'
@@ -14,12 +13,9 @@ function vNombre() {
     if (cantidad >= 16) {
         document.getElementById('mensaje').innerHTML = 'Muchos Caracteres'
         document.getElementById('mensaje').style.color = 'red'
-        document.getElementById('enviar').disabled = true;
+        
     }
 }
-
-
-
 
 //Funcion para validad email
 //let valor = document.getElementById('email').value
@@ -54,6 +50,8 @@ function vCelular(){
         document.getElementById('mensajeCelu').style.color = 'red'
         document.getElementById('enviar').style.display = 'none'
     }
+}
+
 
 //Pagina de memes
 $(document).ready(function () {

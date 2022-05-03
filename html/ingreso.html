@@ -13,7 +13,7 @@
 
 <body>
   <a href="../Home.html">      ← Volver </a>
-  
+
   <br><br><br><br><br><br><br>
   <!--Inicio Sesion(Formulario)-->
 
@@ -32,7 +32,8 @@
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="letra">Contraseña</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" required>
+            <input type="password" class="form-control" id="contrasena" onkeyup="vContrasena()" name="contrasena" required>
+            <p id="texto"></p>
           </div>
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
