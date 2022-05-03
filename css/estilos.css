@@ -111,7 +111,7 @@ body {
 }
 
 .carousel-caption h5 {
-  background-color: rgb(171,171, 171);
+  background-color: rgb(171, 171, 171);
   width: 8cm;
   margin: 0 auto;
 }
@@ -127,8 +127,7 @@ body {
   max-width: 1500px;
 }
 
-.carousel-inner{
+.carousel-inner {
   max-height: 600px;
   max-width: 1500px;
 }
-

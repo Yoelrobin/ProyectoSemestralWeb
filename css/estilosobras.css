@@ -93,30 +93,30 @@
   max-width: 800px;
 }
 
-.carousel-inner{
+.carousel-inner {
   max-height: 500px;
   max-width: 800px;
 }
 
 body {
-  display:inline-block;
+  display: inline-block;
   overflow-x: hidden
-  }
+}
 
-@media (max-width:574px){
-  p{
+@media (max-width:574px) {
+  p {
     font-size: 30px;
   }
 }
 
-@media (max-width:574px){
-  h5{
+@media (max-width:574px) {
+  h5 {
     font-size: 40px;
   }
 }
 
-@media (max-width:574px){
-  h1{
+@media (max-width:574px) {
+  h1 {
     font-size: 40px;
   }
 }
