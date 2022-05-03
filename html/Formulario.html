@@ -39,6 +39,7 @@
                 Productos
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="TablaMemes.html">Tabla Obras</a></li>
                 <li><a class="dropdown-item" href="#">Artista</a></li>
                 <li><a class="dropdown-item" href="#">Obras</a></li>
                 
@@ -77,16 +78,18 @@
                     <label for="nombre" class="form-label">Nombre:</label>
                     <input type="nombre" class="form-control" id="nombre" onkeyup="vNombre()" placeholder="Ingrese nombre" name="nombre" required>
                     <p id="mensaje"></p>
-                    <p id="numero"></p>
                 </div>
                 <div>
-                    <label for="email" class="form-label">Correo electonico:</label>
-                    <input type="email" class="form-control" id="email" placeholder="correo@ejemplo.com" name="email">
+                    <label for="text" class="form-label">Correo electonico:</label>
+                    <input type="text" class="form-control" id="correo" onkeyup="vEmail(correo.value)" placeholder="correo@ejemplo.com" name="correo">
+                    <p id="alerta"></p>
                 </div>
                 <div>
-                    <label for="number" class="form-label">Celular:</label>
-                    <input type="number" class="form-control" id="celular" placeholder="Ingrese celular"
-                        name="celular">
+                  <label for="number" class="form-label">Celular:</label>
+                  <input type="number" class="form-control" id="celular" onkeyup="vCelular()" name="celular">
+                  <p id="mensajeCelu"></p>
+                  <p id="numero"></p>
+              </div>
                 </div>
                 <div>
                     <label for="asunto" class="form-label">Asunto:</label>
@@ -97,7 +100,7 @@
                     <textarea class="form-control" id="txtArea1" rows="3"></textarea>
                 </div><br>
                 <div>
-                    <button type="submit" class="btn btn-outline-dark">Enviar</button>
+                    <button id="enviar" type="submit" class="btn btn-outline-dark">Enviar</button>
                 </div>
             </div>
         </form>
