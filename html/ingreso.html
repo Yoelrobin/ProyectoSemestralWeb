@@ -27,14 +27,14 @@
         <form>
           <div class="mb-3">
             <label for="exampleInputEmail1" class="letra">Email </label>
-            <input type="text" class="form-control" id="correo" onkeyup="vEmail(correo.value)"
+            <input type="text" class="form-control" id="correo"
               aria-describedby="emailHelp" name="correo" required>
             <div id="emailHelp" class="form-text"></div>
             <p id="alerta"></p>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="letra">Contraseña</label>
-            <input type="password" class="form-control" id="contrasena" onkeyup="vContrasena()" name="contrasena"
+            <input type="password" class="form-control" id="contrasena"  name="contrasena"
               required>
             <p id="texto"></p>
           </div>
@@ -42,10 +42,10 @@
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="letra" for="exampleCheck1">Recuerdame</label>
           </div>
-          <button type="submit" class="btn btn-outline-dark">Enviar</button>
+          <button id="enviar" type="submit" class="btn btn-outline-dark">Enviar</button>
           <br><br>
           <div class="container col 4 text-center olv">
-            <a href="...">¿Olvido su contraseña?</a>
+            <a href="../Home.html">¿Olvido su contraseña?</a>
             <br>
             <a href="../html/Registro.html">Registrate</a>
           </div>
