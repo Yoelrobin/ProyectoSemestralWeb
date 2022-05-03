@@ -85,6 +85,8 @@ function vCelular() {
     });
     document.getElementById('enviar').disabled = false
 }*/
+
+
 function vacio() {
     var nom = document.getElementById('nombre').value.length
     var tel = document.getElementById('celular').value.length
