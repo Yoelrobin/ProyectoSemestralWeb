@@ -61,9 +61,8 @@
                     <a class="nav-link active" href="../html/ingreso.html">Inicio sesion</a>
                 </li>
             </ul>
-
             <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <input id="inpBus" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Buscar</button>
             </form>
         </div>
@@ -79,7 +78,6 @@
         <table class="table" id="tabla">
             <!-- class: crea modo tabla Id: es para an javascript agregar los items que quiero -->
             <thead>
-
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Nombre</th>
@@ -87,6 +85,9 @@
 
                 </tr>
             </thead>
+            <tbody id="tabla">
+
+            </tbody>
         </table>
     </div>
 

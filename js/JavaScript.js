@@ -37,21 +37,25 @@ function vEmail(valor){
 
 function vCelular(){
     var cantidad = document.getElementById('celular').value.length
-    var primerNumero = document.getElementById('celular').value.substring(1, 1)
+    var primerNumero = document.getElementById('celular').value.substring(0, 1)
 
-    if(cantidad  <9){
-       document.getElementById('mensajeCelu').innerHTML = 'Debe ser de largo 9'
-       document.getElementById('mensajeCelu').style.color = 'red'
-       document.getElementById('enviar').style.display = 'none'
-
+    if (cantidad >= 1 && cantidad <= 9) {
+        document.getElementById('mensajeCelu').innerHTML = 'Correcto'
+        document.getElementById('mensajeCelu').style.color = 'green'
     }
     if(primerNumero != 9){
         document.getElementById('mensajeCelu').innerHTML = 'Debe comenzar con 9'
         document.getElementById('mensajeCelu').style.color = 'red'
-        document.getElementById('enviar').style.display = 'none'
+    }
+    if(cantidad  >9){
+        document.getElementById('mensajeCelu').innerHTML = 'Sobrepasaste los 9 Digitos'
+        document.getElementById('mensajeCelu').style.color = 'red'
+    }
+    if(cantidad  <9){
+        document.getElementById('mensajeCelu').innerHTML = 'Menos de los 9 digitos'
+        document.getElementById('mensajeCelu').style.color = 'red'
     }
 }
-
 
 //Pagina de memes
 $(document).ready(function () {
@@ -60,11 +64,15 @@ $(document).ready(function () {
             $("#tabla").append("<tr><td>" +
                 item.id + "</td><td>" + item.name +
                 "</td><td><img src =" + item.url + "></td></tr>");
-
-
         })
-
     })
+});
 
-
+$(document).ready(function () {
+    $("#inpBus").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $("#tabla tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
 });

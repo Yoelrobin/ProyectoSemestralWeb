@@ -116,5 +116,12 @@ body {
 }
 
 table{
-   border: #282d32;
+   border: 10px solid black;
 }
+
+@media (max-width:574px) {
+    div {
+      font-size: 20px;
+    }
+  }
+  
