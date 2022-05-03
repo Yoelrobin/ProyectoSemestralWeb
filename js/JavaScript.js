@@ -26,8 +26,8 @@ function vNombre() {
     }
 }
 
+
 //Funcion para validad email
-//let valor = document.getElementById('correo').value
 function vEmail() {
     re = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([\a-z\.]{2,6})$/
     let valor = document.getElementById('correo').value
@@ -46,7 +46,6 @@ function vEmail() {
 
 
 //Funcion para validad numero de telefono
-
 function vCelular() {
     var cantidad = document.getElementById('celular').value.length
     var primerNumero = document.getElementById('celular').value.substring(0, 1)
@@ -86,7 +85,7 @@ function vCelular() {
     document.getElementById('enviar').disabled = false
 }*/
 
-
+//validacion para botones de registros 
 function vacio() {
     var nom = document.getElementById('nombre').value.length
     var tel = document.getElementById('celular').value.length
@@ -99,6 +98,7 @@ function vacio() {
     }
 }
 
+//Funcion jquery para accion de validacion 
 $(document).ready(function () {
     document.getElementById('enviar').disabled = true
     $("#nombre").keyup(vNombre)
@@ -122,6 +122,7 @@ $(document).ready(function () {
     })
 });
 
+//Funcion buscador Tabla Memes
 $(document).ready(function () {
     $("#inpBus").on("keyup", function () {
         var value = $(this).val().toLowerCase();
